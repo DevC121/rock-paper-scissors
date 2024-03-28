@@ -11,6 +11,18 @@ function getComputerChoice(){
     let compChoices = ['rock', 'paper', 'scissors'];
     let randomChoices = Math.floor(Math.random() * compChoices.length) + 1
 
+    if (randomChoices === 0){
+        return 'rock';
+    }
+    
+    if (randomChoices === 1){
+        return 'paper';
+    }
+
+    if (randomChoices === 2){
+        return 'rock';
+    }
+    console.log(getComputerChoice(0));
 }
 
 
